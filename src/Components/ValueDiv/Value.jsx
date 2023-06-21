@@ -9,7 +9,7 @@ const Value = () => {
   return (
     <div className='mb-[4rem] mt-[6rem]'>
       <h1 className='text-textColor text-[25px] py-[2rem] pb-[3rem] 
-      font-bold w-[400px] block'>The value that holds us true and to account</h1>
+      font-bold w-[400px] block'>Empowering integrity and embracing responsibility</h1>
       
       <div className='grid gap-[10rem] grid-cols-3 items-center'>
 
@@ -24,7 +24,7 @@ const Value = () => {
               </span>
            </div>
            <p className='text-[13px] text-textColor opacity-[.7] py-[1rem] font-semibold'>
-           Things beinf made beautiful simple are at the heart of everything we do.
+           Things being made beautiful simple are at the heart of everything we do.
            </p>
         </div>
 
@@ -35,7 +35,7 @@ const Value = () => {
               </div> 
 
               <span className='font-semibold text-textColor text-[18px]'>
-                Simplicity
+                Equality
               </span>
            </div>
            <p className='text-[13px] text-textColor opacity-[.7] py-[1rem] font-semibold'>
@@ -50,7 +50,7 @@ const Value = () => {
               </div> 
 
               <span className='font-semibold text-textColor text-[18px]'>
-                Simplicity
+                Engagement
               </span>
            </div>
            <p className='text-[13px] text-textColor opacity-[.7] py-[1rem] font-semibold'>
@@ -63,8 +63,8 @@ const Value = () => {
       <div className="card mt-[2rem] flex justify-between bg-blueColor p-[5rem] rounded-[10px]">
 
         <div>
-          <h1 className='text-blueColor text-[30px] font-bold'>Ready to switch a career?</h1>
-          <h2 className='text-textColor text-[25px] font-bold'>Let's get started!</h2>
+          <h1 className='text-blueColor text-[30px] font-bold'>Unlock a new path to professional fulfillment!</h1>
+          <h2 className='text-textColor text-[25px] font-bold'>Ignite the Journey!</h2>
         </div>
 
           <button className='border-[2px] rounded-[10px] py-[4px] px-[50px] text-[18px] font-semibold text-blueColor hover:bg-white border-blueColor'>

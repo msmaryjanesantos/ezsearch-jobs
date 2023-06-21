@@ -3,106 +3,15 @@ import React from 'react'
 // Imported Icons ========>
 import {BiTimeFive} from 'react-icons/bi'
 
-// Imported Images ============>
-import logo1 from '../../Assets/logo (1).png'
-import logo2 from '../../Assets/logo (2).png'
-import logo3 from '../../Assets/logo (3).png'
-import logo4 from '../../Assets/logo (4).png'
-import logo5 from '../../Assets/logo (5).png'
-import logo6 from '../../Assets/logo (6).png'
-import logo7 from '../../Assets/logo (7).png'
-import logo8 from '../../Assets/logo (8).png'
+
 
 // For all the jobs, we are going to use high order array method called Map...
 // In this case we shall list all the jobs into an array called Data..
 
-const Data = [
-  {
-    id:1,
-    image: logo1,
-    title: 'Full Stack Web Developer Teacher',
-    time: 'Now', 
-    location: 'Philippines',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, laboriosam!',
-    company: 'Kodego'
-  },
-  {
-    id:2,
-    image: logo2,
-    title: 'UI Designer',
-    time: '14Hrs', 
-    location: 'Cebu',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, laboriosam!',
-    company: 'Liquid Accessments'
-  },
-
-  {
-    id:3,
-    image: logo3,
-    title: 'Software Eng',
-    time: '10Hrs', 
-    location: 'Davao',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, laboriosam!',
-    company: 'Web Tech Agency'
-  },
-
-  {
-    id: 4,
-    image: logo4,
-    title: 'Ui/Ux Designer',
-    time: '10H',
-    location: 'Makati',
-    desc: 'This is a job description to edit in the admin dashboard section if you are posting a new job.',
-    company: 'Government',
-  },
-
-  {
-    id: 5,
-    image: logo5,
-    title: 'Product Designer',
-    time: 'Now',
-    location: 'Iloilo',
-    desc: 'This is a job description to edit in the admin dashboard section if you are posting a new job.',
-    company: 'Newcastle',
-  },
- 
-
-  {
-    id: 6,
-    image: logo6,
-    title: 'Researcher',
-    time: '5H',
-    location: 'Singapore',
-    desc: 'This is a job description to edit in the admin dashboard section if you are posting a new job.',
-    company: 'Nin Co.',
-  },
-
-  {
-    id: 7,
-    image: logo7,
-    title: 'Lead Developer',
-    time: '14H',
-    location: 'Philippines',
-    desc: 'This is a job description to edit in the admin dashboard section if you are posting a new job.',
-    company: 'It Hub Philippines',
-  },
-
-
-  {
-    id: 8,
-    image: logo8,
-    title: 'Data Scientist',
-    time: '2 Days',
-    location: 'Philippines',
-    desc: 'This is a job description to edit in the admin dashboard section if you are posting a new job.',
-    company: 'Nome And Sons',
-  }
-
-]
 
 // This is a single company, lets see how to map it...
 
-const Jobs = () => {
+const Jobs = ({ Data }) => {
   return (
     <div>
       <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10" >

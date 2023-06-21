@@ -6,7 +6,7 @@ import {AiOutlineCloseCircle} from 'react-icons/ai'
 import {BsHouseDoor} from 'react-icons/bs'
 import {CiLocationOn} from 'react-icons/ci'
 
-const Search = () => {
+const Search = ({ searchJob, search, setSearch }) => {
   return (
     <div className='searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]'>
 
@@ -17,7 +17,10 @@ const Search = () => {
           <div className='flex gap-2 items-center'>
             <AiOutlineSearch className='text-[25px] icon'/>
             <input type="text" className='bg-transparent text-blue-500 focus:outline-none w-[100%]' placeholder='Search Job Here....' />
-              <AiOutlineCloseCircle className='text-[30px] text-[#a5a6a6] hover:text-textColor icon'/>
+              <AiOutlineCloseCircle className='text-[30px] text-[#a5a6a6] hover:text-textColor icon'
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              />
           </div>
 
           <div className='flex gap-2 items-center'>
@@ -32,7 +35,7 @@ const Search = () => {
               <AiOutlineCloseCircle className='text-[30px] text-[#a5a6a6] hover:text-textColor icon'/>
           </div>
 
-          <button className='bg-blueColor h-full p-5 px-10 rounded-[10px] text-white cursor-pointer hover:bg-blue-300'>Search</button>
+          <button onClick={searchJob} className='bg-blueColor h-full p-5 px-10 rounded-[10px] text-white cursor-pointer hover:bg-blue-300'>Search</button>
 
 
 
